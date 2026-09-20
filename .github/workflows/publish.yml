@@ -1,11 +1,11 @@
-name: Publish to npm
+﻿name: Publish to npm
 
 # Publishing is tag-driven so a release is an explicit act:
 #   npm version patch && git push --follow-tags
 #
-# Authentication uses npm Trusted Publishing (OIDC) — no long-lived token is
+# Authentication uses npm Trusted Publishing (OIDC) 鈥?no long-lived token is
 # stored in this repository. Configure it once on npmjs.com:
-#   Package → Settings → Trusted Publisher → GitHub Actions
+#   Package 鈫?Settings 鈫?Trusted Publisher 鈫?GitHub Actions
 #     repository: <owner>/dsh-effort-ultra-skin
 #     workflow:   publish.yml
 # Alternatively, replace the OIDC step with NODE_AUTH_TOKEN from an
@@ -28,7 +28,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           registry-url: "https://registry.npmjs.org"
 
       - name: Install
