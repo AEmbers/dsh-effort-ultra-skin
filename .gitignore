@@ -1,0 +1,8 @@
+node_modules/
+*.tsbuildinfo
+.DS_Store
+
+# `dist/` IS committed on purpose: `dsh plugin add github:<owner>/<repo>`
+# installs the repository as-is, so the compiled host half has to be present in
+# the tree. CI runs `npm run check:dist` to prove the committed output matches
+# the source instead of letting it drift.

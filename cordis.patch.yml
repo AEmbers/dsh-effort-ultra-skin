@@ -1,0 +1,20 @@
+# dsh-effort-ultra-skin bundle layer — registers the HOST half into a profile.
+#
+# The host half is intentionally inert (no route, no tool, no service) — it
+# exists only so this package has a row in the composed plugin tree. All the
+# work happens in the browser half.
+#
+# The BROWSER half needs no row here: the module loader auto-discovers the
+# client bundle from package.json `exports["./client"]` + `dsh.client`; the
+# loader picks it into the client roster (alpha serves a batch-merged URL,
+# not a per-package /plugins/<id>/client.js path).
+#
+# PITFALL: `name` is a PACKAGE NAME (resolved via the profile's node_modules),
+# NOT a relative path.
+#
+# This skin targets markup owned by @hytime/dsh-thinking-effort, so that plugin
+# must be installed and enabled for the skin to have anything to style. Without
+# it the browser half matches nothing and stays a no-op.
+- insert:
+    - id: effort-ultra-skin
+      name: dsh-effort-ultra-skin
