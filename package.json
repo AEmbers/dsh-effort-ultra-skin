@@ -23,7 +23,8 @@
     "dist",
     "lib",
     "cordis.patch.yml",
-    "README.md"
+    "README.md",
+    "screenshots.json"
   ],
   "dsh": {
     "bundle": {

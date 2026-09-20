@@ -11,6 +11,10 @@
 
 ## 它长什么样
 
+![浅色主题](docs/screenshots/01-light.png)
+
+![深色主题](docs/screenshots/02-dark.png)
+
 | 位置 | 换皮肤前 | 换皮肤后 |
 |---|---|---|
 | composer 里的折叠 chip | 灰底胶囊，`模型 │ 档位` 之间一条细竖线 | 淡蓝紫渐变胶囊，档位名变成独立着色小胶囊 |
